@@ -1,0 +1,47 @@
+.active{
+    background-color: rgb(100, 149, 237);
+    padding: 9px;
+    border-radius: 8px;
+    color: black;
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 2.5rem;
+    background-color: black;
+    color: wheat;
+    height: 60px;
+    position: sticky;
+    top: 0;
+}
+
+.site-logo {
+    padding: 0;
+    margin: 0;
+    font-size: larger;
+    font-weight: 500;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+button {
+    padding: 6px 15px;
+    border-radius: 8px;
+    border: none;
+}
+
+nav ul li a:not(.active):hover {
+    background-color: white;
+    padding: 9px;
+    border-radius: 8px;
+    color: black;
+}

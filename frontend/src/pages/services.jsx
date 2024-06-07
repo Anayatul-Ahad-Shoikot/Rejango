@@ -1,0 +1,9 @@
+function services(){
+    return (
+        <>
+            <h1>This is our service</h1>
+        </>
+    )
+}
+
+export default services
