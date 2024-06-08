@@ -1,4 +1,4 @@
-function home(){
+function landing(){
     return (
         <>
             <h1>This is Home</h1>
@@ -6,4 +6,4 @@ function home(){
     )
 }
 
-export default home
+export default landing

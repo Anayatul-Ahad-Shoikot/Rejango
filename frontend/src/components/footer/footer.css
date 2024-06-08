@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #2f2f2f;
+    --text-dark: #18181b;
+    --text-light: #71717a;
+    --white: #ffffff;
+    --max-width: 1300px;
+    --header-font: "Lora", serif;
+    --color1: #DDE6ED;
+    --color2: #27374D;   
+    --color3: #526D82;      
+    --color4: #FF597B;       
+    --color5: #f3254e;
+    --color6: #62CDFF;
+    --color7: #0099cc;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    margin-top: 3rem;
+}
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: center;
+    border-bottom: 1px solid var(--white);
+    padding: 2rem 1rem;
+}
+.footer__content h4 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    color: var(--white);
+}
+.footer__content p {
+    color: var(--white);
+}
+.footer__form form {
+    width: 100%;
+    max-width: 600px;
+    margin-inline: auto;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+.footer__form input {
+    width: 100%;
+    padding: 0 1rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+.footer__form button {
+    padding: 1rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    background-color: var(--color4);
+    border-radius: 9px;
+}
+.footer__form button:hover {
+    background-color: var(--color5);
+    font-size: 1.2rem;
+}
+.footer__bar {
+    padding-block: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.footer__logo h4 a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--header-font);
+    color: var(--white);
+}
+.footer__logo p {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: var(--white);
+}
+.footer__nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.footer__link a {
+    font-weight: 500;
+    color: var(--white);
+    white-space: nowrap;
+}

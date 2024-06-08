@@ -1,0 +1,216 @@
+:root {
+    --primary-color: #2f2f2f;
+    --text-dark: #18181b;
+    --text-light: #71717a;
+    --white: #ffffff;
+    --max-width: 1300px;
+    --header-font: "Lora", serif;
+    --color1: #DDE6ED;
+    --color2: #27374D;   
+    --color3: #526D82;      
+    --color4: #FF597B;       
+    --color5: #f3254e;
+    --color6: #62CDFF;
+    --color7: #0099cc;
+}
+
+.header {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.3)
+    ),
+    url('../../../public/bg_1.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: changeBackground 15s linear infinite;
+}
+
+@keyframes changeBackground {
+    25%{
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.3)
+        ),
+        url('../../../public/bg_1.jpeg');
+    }
+    50% {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.3)
+        ),
+        url('../../../public/bg_2.jpg');
+    }
+    75% {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.3)
+        ),
+        url('../../../public/bg_3.jpg');
+    }
+    100% {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.3)
+        ),
+        url('../../../public/bg_4.jpg');
+    }
+}
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 18rem 1rem 2rem 1rem;
+}
+
+.header__container {
+    text-align: center;
+    color: var(--color1);
+}
+
+.header__container h1 {
+    position: relative;
+    margin-bottom: 1rem;
+    font-size: 5.5rem;
+    font-weight: 800;
+    font-family: var(--header-font);
+    color: wheat;
+}
+
+.header__container span {
+    color: var(--color4);
+}
+
+.header__container p {
+    max-width: 701px;
+    margin-inline: auto;
+    font-size: 1.1rem;
+    color: rgb(169, 169, 169);
+}
+
+.header__container form {
+    width: 100%;
+    max-width: 350px;
+    margin-inline: auto;
+    margin-bottom: 4rem;
+    padding-block: 0.25rem;
+    padding-inline: 1.25rem 0.25rem;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--color6);
+    border-radius: 5rem;
+}
+
+.header__container input {
+    padding-left: 1rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    background-color: transparent;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.header__container input::placeholder {
+    color: var(--text-light);
+}
+
+.header__container button {
+    padding: 11px 12px;
+    font-size: 1.25rem;
+    outline: none;
+    border: none;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.header__container a {
+    display: inline-block;
+    padding: 0 12px;
+    font-size: 3rem;
+    color: var(--white);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--white);
+    border-radius: 100%;
+}
+
+
+.nav__links .link a {
+    opacity: 0;
+  }
+  .nav__links.open .link a {
+    opacity: 1;
+  }
+  .nav__links.open {
+    transform: scaleY(1);
+  }
+  .nav__menu__btn {
+    display: block;
+  }
+  .header__container h1 {
+    margin-top: 4rem;
+    font-size: 3.5rem;
+  }
+  .footer__bar {
+    flex-direction: column;
+  }
+
+
+#count {
+  color: var(--color4);
+  font-size: 6rem;
+  font-family: fantasy;
+  transition: .5s;
+}
+#count:hover {
+  transform: scale(1.15) translateY(-10px);
+  transition: .5s;
+}
+
+#info_web {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  width: -webkit-fill-available;
+  padding: 3rem 0rem 18rem 0rem;
+}
+
+#info_cell {
+  width: auto;
+}
+
+#text {
+  color: floralwhite;
+  font-weight: 500;
+}
+
+#body_tag {
+  margin: 3rem 25rem;
+}
+
+#highlight{
+  color: var(--color7);
+  font-size: 4rem;
+}
+
+#icon_i{
+  color: var(--color4);
+  font-weight: 600;
+}
+#part {
+  transition: .6s;
+}
+#part:hover {
+  transform: scale(1.2) translateY(-10px);
+  transition: 1s;
+}
