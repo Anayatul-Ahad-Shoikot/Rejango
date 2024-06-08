@@ -12,26 +12,26 @@ function home(){
             </p>
         </div>
 
-        <div className="row diag-ro" id="info_web">
-            <div className="about-diag" id="info_cell">
+        <div className="row">
+            <div className="counter">
                 <div className="icon"><i className="fas fa-arrow-right"></i></div>
-                <div className="tex">
-                    <p id="text">There are over</p>
-                    <h3 id="count">9+</h3><p id="text">orphans to help</p>
+                <div>
+                    <p className="text">There are over</p>
+                    <h3 className="count">9+</h3><p id="text">orphans to help</p>
                 </div>
             </div>
-            <div className="about-diag" id="info_cell">
+            <div className="counter">
                 <div className="icon"><i className="fas fa-arrow-right"></i></div>
-                <div className="tex">
-                    <p id="text">We have total</p>
-                    <h3 id="count">100+</h3><p id="text">organizations</p>
+                <div>
+                    <p className="text">We have total</p>
+                    <h3 className="count">100+</h3><p id="text">organizations</p>
                 </div>
             </div>
-            <div className="about-diag" id="info_cell">
+            <div className="counter">
                 <div className="icon"><i className="fas fa-arrow-right"></i></div>
-                <div className="tex">
-                    <p id="text">We serverd over</p>
-                    <h3 id="count">10+</h3><p id="text">BDT as Donation</p>
+                <div>
+                    <p className="text">We serverd over</p>
+                    <h3 className="count">10+</h3><p id="text">BDT as Donation</p>
                 </div>
             </div>
         </div>
