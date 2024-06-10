@@ -1,24 +1,30 @@
-import './navbar.css'
-import { NavLink, Link } from 'react-router-dom'
-import img from '/logo.png'
+import { NavLink } from 'react-router-dom';
+import './navbar.css';
 
-function navbar(){
+const Navbar = () => {
     return (
-        <nav>
-            <div className="logo">
-                <Link to="/"><img src={img} alt="Logo" /></Link>
-            </div>
-            <div className="links">
-                <ul>
-                    <li><NavLink to="/home/home.jsx" className="li">Home</NavLink></li>
-                    <li><NavLink to="/donate.jsx" className="li">Donate</NavLink></li>
-                    <li><NavLink to="/blog.jsx" className="li">Blogs</NavLink></li>
-                    <li><NavLink to="/aboutus.jsx" className="li">About Us</NavLink></li>
-                    <li className='btn'><Link to="/login.jsx">LogIn</Link></li>
+        <nav className="custom-navbar">
+            <div className="navbar-container">
+                <NavLink to="/home/home.jsx" className="logo">
+                    <img src="/logo.png" alt="Logo" width={160} height={30} />
+                </NavLink>
+                <ul className="nav-links">
+                    <li>
+                        <NavLink to="/donate" className="li">Donate</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/services.jsx" className="li">Blogs</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/aboutus.jsx" className="li">About Us</NavLink>
+                    </li>
+                    <li className="btn">
+                        <NavLink to="/login.jsx">LogIn</NavLink>
+                    </li>
                 </ul>
             </div>
         </nav>
-    )
-}
+    );
+};
 
-export default navbar
+export default Navbar;

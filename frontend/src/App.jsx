@@ -14,7 +14,6 @@ const App = () => {
       <Nav />
       <div className="container">
         <Routes>
-          <Route  path="/" element={<Home />}></Route>
           <Route  path="/home/home.jsx" element={<Home />}></Route>        
           <Route  path="/services.jsx" element={<Service />}></Route>
           <Route  path="/aboutus.jsx" element={<AboutUs />}></Route>
