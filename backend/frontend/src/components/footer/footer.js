@@ -1,35 +1,36 @@
-import './footer.css'
+import React from 'react';
+import './footer.css';
 
 function footer(){
-return (
-    <footer className="footer">
-      <div className="section__container footer__container">
-        <div className="footer__content">
-          <h4>SUBSCRIBE TO GET THE LATEST NEWS</h4>
-          <p>
-            We recommend you to subscribe to our page. Enter your email to
-            get our daily updates.
-          </p>
+  return (
+      <footer className="footer">
+        <div className="section__container footer__container">
+          <div className="footer__content">
+            <h4>SUBSCRIBE TO GET THE LATEST NEWS</h4>
+            <p>
+              We recommend you to subscribe to our page. Enter your email to
+              get our daily updates.
+            </p>
+          </div>
+          <div className="footer__form">
+            <form action="/">
+              <input type="text" placeholder="Enter your email" />
+              <button>Subscribe</button>
+            </form>
+          </div>
         </div>
-        <div className="footer__form">
-          <form action="/">
-            <input type="text" placeholder="Enter your email" />
-            <button>Subscribe</button>
-          </form>
+        <div className="section__container footer__bar">
+          <div className="footer__logo">
+            <h4><a href="#">CareSerenity.ORG</a></h4>
+            <p>Copyright © 2023 Web Design Mastery. All rights reserved.</p>
+          </div>
+          <ul className="footer__nav">
+            <li className="footer__link"><a href="#">Partnership</a></li>
+            <li className="footer__link"><a href="#">Privacy Policy</a></li>
+          </ul>
         </div>
-      </div>
-      <div className="section__container footer__bar">
-        <div className="footer__logo">
-          <h4><a href="#">CareSerenity.ORG</a></h4>
-          <p>Copyright © 2023 Web Design Mastery. All rights reserved.</p>
-        </div>
-        <ul className="footer__nav">
-          <li className="footer__link"><a href="#">Partnership</a></li>
-          <li className="footer__link"><a href="#">Privacy Policy</a></li>
-        </ul>
-      </div>
-    </footer>
-)
+      </footer>
+  );
 }
 
-export default footer
+export default footer;

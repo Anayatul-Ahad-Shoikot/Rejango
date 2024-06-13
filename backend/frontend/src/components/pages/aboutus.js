@@ -1,3 +1,4 @@
+import React from 'react';
 
 function aboutus(){
     return (
@@ -74,7 +75,7 @@ function aboutus(){
             <br />
             <br />
         </>
-    )
+    );
 }
 
-export default aboutus
+export default aboutus;
