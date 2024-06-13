@@ -1,0 +1,90 @@
+:root {
+    --primary-color: #2f2f2f;
+    --text-dark: #18181b;
+    --text-light: #71717a;
+    --white: #ffffff;
+    --max-width: 1300px;
+    --header-font: "Lora", serif;
+    --color1: #DDE6ED;
+    --color2: #27374D;   
+    --color3: #526D82;      
+    --color4: #FF597B;       
+    --color5: #f3254e;
+    --color6: #62CDFF;
+    --color7: #0099cc;
+}
+
+nav {
+    width: 100%;
+    padding: 10px 50px 6px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    height: 60px;
+}
+
+nav .logo img{
+    flex: 1;
+    height: 80px;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1rem;
+}
+
+nav .links ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav .links .li {
+    margin: 0rem 1.5rem;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color1);
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+nav .links ul .li:hover {
+    text-shadow: 2px 5px 45px var(--white);
+    transform: scale(1.1);
+    color: var(--color6);
+    transition: 0.5s ease-in-out;
+}
+
+nav .links ul .active{
+    transform: scale(1.1);
+    text-decoration: underline 2.3px var(--color5);
+}
+
+nav .links .btn {
+    text-align: center;
+    margin-left: 1.5rem;
+    padding: .5rem;
+    width: 7rem;
+    font-size: 1rem;
+    background-color: var(--color4);
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+}
+
+nav .links .btn a{
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+
+nav .links .btn:hover{
+    text-shadow: none;
+    transform: none;
+    background-color: var(--color5);
+    transition: 0.5s ease-in-out;
+}
