@@ -22,6 +22,7 @@ nav {
     justify-content: space-between;
     height: 60px;
     position: sticky;
+    backdrop-filter: blur(10px);
 }
 
 nav .logo img{

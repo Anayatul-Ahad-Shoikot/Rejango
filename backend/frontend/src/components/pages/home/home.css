@@ -14,19 +14,6 @@
     --color7: #0099cc;
 }
 
-/* my change */
-.container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.background{
-    position: relative;
-    z-index: 10000;
-}
-/* ----------------------- */
 .container .header {
     display: flex;
     align-items: center;
@@ -41,9 +28,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     animation: changeBackground 15s linear infinite;
-    position: relative;
+    /* position: relative;
     top: -65px;
-    z-index: -1000;
+    z-index: -1000; */
 }
 
 @keyframes changeBackground {
