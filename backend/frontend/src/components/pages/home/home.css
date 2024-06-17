@@ -14,6 +14,28 @@
     --color7: #0099cc;
 }
 
+*{
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.3)
+    ),
+    url('../../../assets/images/bg_1.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: changeBackground 15s linear infinite;
+}
+
 @keyframes changeBackground {
     25%{
     background-image: linear-gradient(
@@ -47,22 +69,6 @@
         ),
         url('../../../assets/images/bg_4.jpg');
     }
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.9),
-        rgba(0, 0, 0, 0.3)
-    ),
-    url('../../../assets/images/bg_1.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    animation: changeBackground 15s linear infinite;
 }
 
 .header .section__container {
@@ -218,4 +224,64 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hello__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    transition: opacity 1s ease-in-out, visibility 0s 1s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.hidden {
+    display: none;
+    /* opacity: 0;
+    visibility: hidden; */
+    /* transition: opacity 1s ease-in-out; */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot {
+    font-size: 3rem;
+    /* margin-bottom: 1rem; */
+}
+
+.hello {
+    margin: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0; }
+    100% {opacity: 1; }
+}
+
+.main__section {
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* padding: 20px; */
+    /* opacity: 0;
+    transition: opacity 1s ease-in-out; */
+    margin-top: 100vh;
+}
+
+.main-section:not(.hidden) {
+    opacity: 1;
 }
