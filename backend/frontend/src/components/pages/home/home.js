@@ -91,7 +91,7 @@ class Home extends Component {
         //     </div>
         // </header>
 
-            <>
+            <div>
                 <div className={`hello__section ${showMain ? 'hidden' : ''}`}>
                     <div className="content">
                         <span className="dot">.</span>
@@ -136,9 +136,9 @@ class Home extends Component {
                                 </div>
                             </div>
                         </header>
-                <Footer />
-                </div>
-            </>
+                      <Footer />
+                  </div>
+            </div>
         );
     }
 }
